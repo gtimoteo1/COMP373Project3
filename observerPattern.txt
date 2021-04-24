@@ -1,0 +1,9 @@
+The observer pattern is implemented with the Room class as the subject.
+
+The observer class is RoomObserver.java, which has methods that add state change notifications to a list and output the full list.
+
+There are methods in the Room class that allow the class state to change (either inUse or inMaintenance).
+In any of the state change methods, a notification function is called to notify all observers.
+The list of observers is maintained in Room, and can take new subscriptions or remove subscriptions.
+
+The notifications do not contain the state change value; only the attribute is returned as ouput (inUse or inMaintenance).
