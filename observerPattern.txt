@@ -7,3 +7,5 @@ In any of the state change methods, a notification function is called to notify 
 The list of observers is maintained in Room, and can take new subscriptions or remove subscriptions.
 
 The notifications do not contain the state change value; only the attribute is returned as ouput (inUse or inMaintenance).
+
+Problem solved: the client used to not be able to get the state of a given room. The observer now can track state in the client layer.
