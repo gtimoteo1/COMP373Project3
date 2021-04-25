@@ -16,7 +16,7 @@ public class TestFacility implements FacilityInterface {
     }
 
     @Override
-    // this facility can test the vaccines on 500 volunteer test subjects a day
+    // this facility can test on 500 subjects a day
     public int output() {
         return 500;
     }

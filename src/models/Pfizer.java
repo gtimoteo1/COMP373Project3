@@ -17,4 +17,9 @@ public class Pfizer extends Vaccine {
     public void test() {
         testFacility.output();
     }
+
+    @Override
+    public double getEffectivenessRate() {
+        return 95.0;
+    }
 }

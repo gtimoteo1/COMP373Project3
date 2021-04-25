@@ -16,7 +16,7 @@ public class ProductionFacility implements FacilityInterface {
     }
 
     @Override
-    // this facility can produce 1000 vaccines per day
+    // this facility can produce 1000 entities per day
     public int output() {
         return 1000;
     }

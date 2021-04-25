@@ -1,9 +1,21 @@
-The Bridge Pattern is implemented with new classes ProductionFacility, TestFacility, Vaccine, Pfizer, and Moderna.
+The Bridge Pattern is implemented as follows with new classes ProductionFacility, TestFacility, Vaccine, Pfizer, and Moderna.
 
-FacilityInterface is now utilized instead of Facility for more flexibility.
+Facility has been refactored to "GeneralFacility" which is now used in our existing tests and other classes.
+The reason for Facility's refactoring is to improve our abstraction.
 
-FacilityInterface now contains the "output" method and Facility has been refactored to "GeneralFacility" which is now used in our tests
-and other classes.
+FacilityInterface is now implemented by the ProductionFacility and TestFacility classes.
+
+ProductionFacility and TestFacility implement FacilityInterface, which contains a new 'output' method.
+The role of the output method is to provide either a number of vaccines produced or volunteers tested depending on the facility.
+Moderna and Pfizer (which are both extended from the abstract class Vaccine) contain produce() and test() methods which call the corresponding facility's output method.
+
+Problem solved with Bridge:
+We want to separate our facilities from the entities dependent on our facilities, i.e. vaccine objects.
+We do this by decoupling our implementations from our abstractions using Bridge.
+Instead of making our production and test facilities dependent on the vaccine objects, we will just call our facilities' methods from the vaccine object.
+We can now extend our system however we like and even use our production and test facilities for any purpose, i.e. makeup or food production.
+We can also add vaccines produced by different companies because our Vaccine class is abstract. We would simply extend Vaccine in our new classes.
+The Bridge pattern allows us to make the most out of our Facility Management System through varying and extensible hierarchies of abstraction.
 
 
 

@@ -14,4 +14,6 @@ abstract class Vaccine {
     abstract public void produce();
 
     abstract public void test();
+
+    abstract public double getEffectivenessRate();
 }

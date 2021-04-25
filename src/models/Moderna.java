@@ -10,11 +10,16 @@ public class Moderna extends Vaccine {
 
     @Override
     public void produce() {
-
+        productionFacility.output();
     }
 
     @Override
     public void test() {
+        testFacility.output();
+    }
 
+    @Override
+    public double getEffectivenessRate() {
+        return 94.1;
     }
 }
