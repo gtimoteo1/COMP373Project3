@@ -6,7 +6,7 @@ The reason for Facility's refactoring is to improve our abstraction.
 FacilityInterface is now implemented by the ProductionFacility and TestFacility classes.
 
 ProductionFacility and TestFacility implement FacilityInterface, which contains a new 'output' method.
-The role of the output method is to provide either a number of vaccines produced or volunteers tested depending on the facility.
+The role of the output method in our example is to provide either a number of vaccines produced or volunteers tested depending on the facility.
 Moderna and Pfizer (which are both extended from the abstract class Vaccine) contain produce() and test() methods which call the corresponding facility's output method.
 
 Problem solved with Bridge:
