@@ -7,6 +7,7 @@ import java.util.Date;
 
 import models.Building;
 import models.Facility;
+import models.GeneralFacility;
 import models.MaintenanceRequest;
 import models.Room;
 
@@ -17,7 +18,7 @@ public class testMaintenanceRequest {
 
     @BeforeEach
     public void setUp() {
-        mr = new MaintenanceRequest(new Facility(1, "facility 1", "address 1"),
+        mr = new MaintenanceRequest(new GeneralFacility(1, "facility 1", "address 1"),
                 "leaky faucet", 100.00, new Date(), 20.0, new Room(new Building(2,
                 "building 2", "address 2"), 2, 202));
     }

@@ -2,10 +2,12 @@ package models;
 
 import java.util.Date;
 
+import views.FacilityInterface;
+
 public class MaintenanceRequest extends Maintenance {
     boolean accepted = false;
 
-    public MaintenanceRequest(Facility facility, String details, double cost, Date date, double dur, Room room) {
+    public MaintenanceRequest(GeneralFacility facility, String details, double cost, Date date, double dur, Room room) {
         super(facility, details, cost, date, dur, room);
     }
 

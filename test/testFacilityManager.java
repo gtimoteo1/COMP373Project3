@@ -15,14 +15,14 @@ public class testFacilityManager {
     private FacilityManager fm;
     private Room r;
     private Building b;
-    private Facility f;
+    private GeneralFacility f;
     private MaintenanceRequest mr; 
     private Maintenance.Inspection i;
 
     @BeforeAll
     public void setUp() throws Exception{
         fm = new FacilityManager();
-        f = new Facility(1, "LUC WTC", "Water Tower Campus");
+        f = new GeneralFacility(1, "LUC WTC", "Water Tower Campus");
         b = new Building(1, "Schreiber", "51 E. Pearson St, Chicago, IL 60622");
         r = new Room(b, 20, 603);
         mr = new MaintenanceRequest(f, "Pipe burst", 25.00, new Date(20201, 01, 01), 1.0, r);

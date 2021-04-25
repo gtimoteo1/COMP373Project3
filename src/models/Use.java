@@ -6,14 +6,14 @@ import java.util.Date;
 import views.UseInterface;
 
 public class Use implements UseInterface {
-    Facility facility;
+    GeneralFacility facility;
     String details;
     Date date; 
     double duration; 
     Room room;
     boolean inUse = false;
 
-    public Use(String details, Date date, double duration, Room room, Facility facility) {
+    public Use(String details, Date date, double duration, Room room, GeneralFacility facility) {
         inUse = true;
         this.details = details;
         this.facility = facility; 
@@ -25,7 +25,7 @@ public class Use implements UseInterface {
     public boolean isInUseDuringInterval() { return inUse; } //returns if facility is in use
 
     // Assigning a facility to whether or not it is in use
-    public boolean assignFacilityToUse(Facility facility) {
+    public boolean assignFacilityToUse(GeneralFacility facility) {
         this.facility = facility;
         inUse = true;
         return inUse;

@@ -6,6 +6,7 @@ import java.util.Date;
 
 import models.Building;
 import models.Facility;
+import models.GeneralFacility;
 import models.Room;
 import models.Use;
 
@@ -19,14 +20,14 @@ public class testUse {
         usage = new Use(
                 "Faucet Maintenance", new Date(), 100.00, new Room(new Building(2,
                 "building 2", "address 2"), 2, 202),
-                new Facility(1, "facility 1", "address 1"));
+                new GeneralFacility(1, "facility 1", "address 1"));
     }
 
     @Test
     @DisplayName("Testing assignFacilityToUse")
     public void testAssignFacilityToUse(){
         assertEquals(false, usage.isInUseDuringInterval());
-        usage.assignFacilityToUse(new Facility(1, "facility 1", "address 1"));
+        usage.assignFacilityToUse(new GeneralFacility(1, "facility 1", "address 1"));
         assertEquals(true, usage.isInUseDuringInterval());
     }
 
@@ -36,7 +37,7 @@ public class testUse {
         usage = new Use(
                 "Faucet Maintenance", new Date(), 100.00, new Room(new Building(2,
                 "building 2", "address 2"), 2, 202),
-                new Facility(1, "facility 1", "address 1"));
+                new GeneralFacility(1, "facility 1", "address 1"));
         assertEquals(8.0, usage.calcUsageRate());
     }
 

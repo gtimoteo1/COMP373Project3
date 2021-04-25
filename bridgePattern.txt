@@ -1,0 +1,9 @@
+The Bridge Pattern is implemented with new classes ProductionFacility, TestFacility, Vaccine, Pfizer, and Moderna.
+
+FacilityInterface is now utilized instead of Facility for more flexibility.
+
+FacilityInterface now contains the "output" method and Facility has been refactored to "GeneralFacility" which is now used in our tests
+and other classes.
+
+
+

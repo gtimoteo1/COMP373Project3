@@ -1,13 +1,13 @@
 package views;
 
-import models.Facility;
+import models.GeneralFacility;
 import models.Room;
 
 import java.util.Date;
 
 public interface UseInterface {
     public boolean isInUseDuringInterval(); // A method to check if a room/facility is in use
-    public boolean assignFacilityToUse(Facility facility); // Assigning a facility to whether or not it is in use
+    public boolean assignFacilityToUse(GeneralFacility facility); // Assigning a facility to whether or not it is in use
     public float calcUsageRate(); // used to find how often/how much a facility/room/building is used.
     //helper methods
     public String getDetails();// gets details about the use

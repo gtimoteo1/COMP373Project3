@@ -4,23 +4,21 @@ import java.util.ArrayList;
 
 import views.FacilityInterface;
 
-public class Facility implements FacilityInterface {
-    ArrayList<Building> buildings;
-    ArrayList<MaintenanceRequest> requestedMaintenance; // all MaintenanceRequest objects
-    ArrayList<Use> actualUsage; // all use objects
-    ArrayList<Maintenance.Inspection> inspections; // all inspection objects
+public class TestFacility implements FacilityInterface {
     int facilityID;
     String facilityName;
     String details;
 
-    public Facility(int facilityID, String facilityName, String details) {
+    public TestFacility(int facilityID, String facilityName, String details) {
         this.facilityID = facilityID;
         this.facilityName = facilityName;
         this.details = details;
-        this.buildings = new ArrayList<Building>();
-        this.requestedMaintenance = new ArrayList<MaintenanceRequest>();
-        this.actualUsage = new ArrayList<Use>();
-        this.inspections = new ArrayList<Maintenance.Inspection>();
+    }
+
+    @Override
+    // this facility can test the vaccines on 500 volunteer test subjects a day
+    public int output() {
+        return 500;
     }
 
     @Override

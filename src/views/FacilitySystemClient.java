@@ -23,14 +23,14 @@ public class FacilitySystemClient {
             Map.Entry element = (Map.Entry)i.next();
             String key = element.getKey().toString();
             Object val = element.getValue();
-            Facility f;
+            GeneralFacility f;
             Building b;
             Room r;
             MaintenanceRequest mr;
             Use u;
             switch(key){
                 case "Facility":
-                    f = (Facility)val;
+                    f = (GeneralFacility)val;
                     System.out.println("Facility " + f.getName());
                     System.out.println("Facility details: " + f.getDetails());
                     System.out.println("Maintenance requests: " + f.listMaintRequests().size());

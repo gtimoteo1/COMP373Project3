@@ -5,7 +5,7 @@ import java.util.Date;
 import views.MaintenanceInterface;
 
 public class Maintenance implements MaintenanceInterface {
-    Facility facility;
+    GeneralFacility facility;
     String details;
     double cost;
     double duration; // will be measured in units of hours
@@ -18,13 +18,13 @@ public class Maintenance implements MaintenanceInterface {
         this.details = "No details available";
         this.completed = false;
         this.cost = 0.00;
-        this.facility = new Facility(0, "Facility 0", "Default details");
+        this.facility = new GeneralFacility(0, "Facility 0", "Default details");
         this.duration = 0;
         this.room = new Room(new Building(0, "Building 0", "0000 Default Street"), 0,000);
         this.date = new Date();
     }
 
-    public Maintenance(Facility facility, String details, double cost, Date date, double dur, Room room) {
+    public Maintenance(GeneralFacility facility, String details, double cost, Date date, double dur, Room room) {
         this.facility = facility; this.details = details; this.duration = dur; this.room = room; this.date = date;
         this.cost = dur * 15.0;
         this.completed = false;

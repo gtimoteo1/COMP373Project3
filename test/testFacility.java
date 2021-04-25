@@ -9,19 +9,19 @@ import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import models.Building;
-import models.Facility;
+import models.GeneralFacility;
 import models.MaintenanceRequest;
 import models.Room;
 
 public class testFacility {
 
-    private Facility facility;
+    private GeneralFacility facility;
     private Building building;
     private Room room;
 
     @BeforeAll
     public void setUp() throws Exception{
-        facility = new Facility(1, "LUC", "Chicago's Jesuit University");
+        facility = new GeneralFacility(1, "LUC", "Chicago's Jesuit University");
         building = new Building(1, "Mundelein", "1032 W.Sheridan Rd, Chicago, IL, 60626");
         room = new Room(building, 45, 311);
     }
