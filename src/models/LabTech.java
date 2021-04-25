@@ -6,7 +6,7 @@ import views.EmployeeVisitor;
 //This creates  a concrete class that is extending the class.
 
 abstract class LabTech implements Employee {
-    Employee labTech;
+    Employee tech;
     String name;
     int ID;
 
@@ -17,6 +17,7 @@ abstract class LabTech implements Employee {
 
     @Override
     public void accept(EmployeeVisitor employeeVisitor) {
+        tech.accept(employeeVisitor);
         employeeVisitor.visit(this);
     }
 }

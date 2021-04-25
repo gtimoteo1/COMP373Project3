@@ -1,5 +1,7 @@
 package views;
+package models;
+
 
 public interface EmployeeVisitor {
-    public void visit(Employee employee); //Define an interface to represent visitor.
+    public void visit(LabTech tech); //Define an interface to represent visitor.
 }

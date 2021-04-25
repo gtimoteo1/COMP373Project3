@@ -5,9 +5,9 @@ import views.EmployeeVisitor;
 
 //This is to create a concrete visitor implementing the above class.
 
-public class EmployeeDisplayVisitor implements EmployeeVisitor {
-    @Override
-    public void visit(Employee employee) {
+abstract class EmployeeDisplayVisitor implements EmployeeVisitor {
+
+    public void visit(LabTech tech) {
         System.out.println("Displaying Employee.");
     }
 }
