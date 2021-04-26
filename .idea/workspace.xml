@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b225de4-319f-4688-a8c3-fea09b874761" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/EmployeeDisplayVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/LabTech.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/EmployeeVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visitorPattern.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMP373Project3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/COMP373Project3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/COMP373Project3.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
