@@ -8,6 +8,7 @@ UML Diagram of Domain Model: https://drive.google.com/file/d/1Zm1sBM2HghQoju3NC0
 **Overview**
 
 In this project, we will practice the implementation of design patterns.
+Please refer to the observerPattern.txt, bridgePattern.txt, and visitorPattern.txt files to see our description of how we utilized the design patterns.
 
 **Program Requirements**
 You need to design and implement:
