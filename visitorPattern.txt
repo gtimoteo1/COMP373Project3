@@ -1,0 +1,8 @@
+The Visitor Pattern is implemented with the interfaces Employee and EmployeeVisitor and the class LabTech
+
+We are going to create an Employee interface defining accept operation.
+LabTech is going to be a concrete class implementing the Employee interface.
+We will define another interface EmployeeVisitor which will define a visitor class operations. LabTech
+uses concrete visitor to do corresponding action.
+
+The LabTech Class will give information in regards to the lab tech's name and ID number.
